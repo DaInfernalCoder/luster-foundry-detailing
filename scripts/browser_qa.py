@@ -47,12 +47,9 @@ def main() -> None:
                     phoneLinks: document.querySelectorAll(`a[href="${phone}"]`).length,
                     schedulerLinks:
                         document.querySelectorAll(`a[href="${scheduler}"]`).length,
-                    comparison: {
-                        panel: Boolean(document.querySelector(".comparison-panel")),
-                        dirty: Boolean(document.querySelector(".comparison-dirty")),
-                        clean: Boolean(document.querySelector(".comparison-clean")),
-                        divider: Boolean(document.querySelector(".comparison-divider"))
-                    }
+                    heroImage: Boolean(document.querySelector(".hero-visual > img")),
+                    comparisonElements:
+                        document.querySelectorAll('[class*="comparison"], [data-comparison-slider], [data-finish-gauge]').length
                 })""",
                 [PHONE, SCHEDULER],
             )
@@ -71,8 +68,10 @@ def main() -> None:
                 "transparent",
             }:
                 failures.append(f"{width}px header has no independent background")
-            if not all(metrics["comparison"].values()):
-                failures.append(f"{width}px before-and-after panel is incomplete")
+            if not metrics["heroImage"]:
+                failures.append(f"{width}px static hero image is missing")
+            if metrics["comparisonElements"] != 0:
+                failures.append(f"{width}px still contains slider or comparison elements")
 
             reveal_count = page.locator(".reveal").count()
             for index in range(reveal_count):
