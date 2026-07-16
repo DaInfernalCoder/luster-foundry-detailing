@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Luster Foundry</title>
+  <desc id="desc">Geometric LF monogram with an inspection beam</desc>
+  <rect width="1200" height="1200" rx="72" fill="#161a1d"/>
+  <path d="M220 190h180v610h250v170H220z" fill="#f4f5f2"/>
+  <path d="M530 190h450v170H710v150h220v168H710v292H530z" fill="#f4f5f2"/>
+  <path d="M168 920 1032 278" fill="none" stroke="#2547e8" stroke-width="58"/>
+  <path d="M168 984 1032 342" fill="none" stroke="#c7a665" stroke-width="11"/>
+  <circle cx="938" cy="328" r="38" fill="#e0443e"/>
+</svg>
