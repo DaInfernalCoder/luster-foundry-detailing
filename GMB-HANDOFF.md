@@ -18,7 +18,10 @@ Build and launch a polished Houston mobile auto detailing website, connect the a
 - Registration settings: one year, high privacy with consent, auto-renew disabled
 - Purchase approval: explicitly received from Sumit
 - Master registry: https://docs.google.com/spreadsheets/d/1q9LHXEOZi0Hs5n8WmPjZeUKZPuPVFyuX/edit
-- Drive asset folder: pending
+- Drive asset folder: https://drive.google.com/drive/folders/1IJLtEG3fm2CCd9yubdyP2A8LbUmuSo9m
+- GitHub repository: https://github.com/DaInfernalCoder/luster-foundry-detailing
+- Vercel project: https://vercel.com/dainfernalcoders-projects/luster-foundry-detailing
+- Production fallback: https://luster-foundry-detailing.vercel.app
 
 ## Decisions and truth constraints
 
@@ -47,12 +50,12 @@ Build and launch a polished Houston mobile auto detailing website, connect the a
 - [x] Licensed local photography and source records are included
 - [x] Static preflight and desktop/mobile browser QA pass
 - [x] Public copy passes the required trigger-word audit
-- [ ] Clean `main` commit is pushed to a dedicated GitHub repository
-- [ ] GitHub is connected to a production Vercel project
-- [ ] Apex and `www` are attached and registrar DNS is changed
-- [ ] Production fallback is ready and custom-domain propagation is checked once
-- [ ] Google Business Profile description and 1/4/4 image pack are validated
-- [ ] Master registry row and Drive asset folder are verified
+- [x] Clean `main` commit is pushed to a dedicated GitHub repository
+- [x] GitHub is connected to a production Vercel project
+- [x] Apex and `www` are attached and registrar DNS is changed
+- [x] Production fallback is ready and custom-domain propagation is checked once
+- [x] Google Business Profile description and 1/4/4 image pack are validated
+- [x] Master registry row and Drive asset folder are verified
 
 ## Task list
 
@@ -64,21 +67,21 @@ Build and launch a polished Houston mobile auto detailing website, connect the a
 - [x] Download and document licensed launch photography
 - [x] Build the site and brand assets
 - [x] Run preflight, browser QA, and copy audit
-- [ ] Commit and push GitHub repository
-- [ ] Deploy to Vercel and attach hosts
-- [ ] Change Spaceship nameservers and check propagation once
-- [ ] Create and validate GMB asset pack
-- [ ] Mirror asset pack to Drive and finalize registry row
-- [ ] Verify live production content and close the handoff
+- [x] Commit and push GitHub repository
+- [x] Deploy to Vercel and attach hosts
+- [x] Change Spaceship nameservers and check propagation once
+- [x] Create and validate GMB asset pack
+- [x] Mirror asset pack to Drive and finalize registry row
+- [x] Verify live production content and close the handoff
 
 ## Current state
 
-The domain is registered and verified with high privacy and auto-renew disabled. The dependency-free site is complete and has passed static preflight, trigger-word review, desktop QA, tablet QA, and mobile QA. The permanent project is ready for its first Git commit and production publication.
+The dependency-free site is published from a clean `main` branch and connected to Vercel. The production fallback returns the intended Luster Foundry page over HTTPS. Vercel has the apex and `www` hosts attached. Spaceship confirms `ns1.vercel-dns.com` and `ns2.vercel-dns.com` are saved; the single immediate Vercel check still saw the registry nameservers, so custom-domain DNS and HTTPS are marked propagation pending without further polling. The validated 1-logo, 4-cover, and 4-business-photo GMB pack exists locally and in the verified Drive folder.
 
 ## Blocker
 
-None.
+Custom-domain DNS and HTTPS propagation is pending. GBP creation still needs the operating hours, business address/address-visibility decision, owner Google account, and verification workflow.
 
 ## Exact next action
 
-Copy the curated release files into the permanent repository, commit them, publish the GitHub repository, and deploy the production site to Vercel.
+In a later run, verify `lusterfoundry.shop` and `www.lusterfoundry.shop` after DNS propagation, then complete the GBP administrative inputs and verification.
