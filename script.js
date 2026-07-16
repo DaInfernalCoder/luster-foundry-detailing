@@ -40,18 +40,3 @@ if (!reducedMotion && "IntersectionObserver" in window) {
 } else {
   reveals.forEach((element) => element.classList.add("visible"));
 }
-
-const finishVisual = document.querySelector("[data-finish-visual]");
-const finishGauge = document.querySelector("[data-finish-gauge]");
-
-if (finishVisual && finishGauge && !reducedMotion) {
-  finishVisual.addEventListener("pointermove", (event) => {
-    const bounds = finishVisual.getBoundingClientRect();
-    const percentage = ((event.clientX - bounds.left) / bounds.width) * 100;
-    finishGauge.style.left = `${Math.min(86, Math.max(14, percentage))}%`;
-  });
-
-  finishVisual.addEventListener("pointerleave", () => {
-    finishGauge.style.left = "";
-  });
-}

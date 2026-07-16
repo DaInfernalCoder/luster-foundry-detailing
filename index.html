@@ -12,7 +12,7 @@
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://lusterfoundry.shop/" />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-    <link rel="preload" href="/assets/polish-foam.jpg" as="image" />
+    <link rel="preload" href="/assets/detail-blue.jpg" as="image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -103,11 +103,26 @@
           </ul>
         </div>
 
-        <div class="hero-visual" data-finish-visual>
-          <img src="/assets/polish-foam.jpg" alt="A vehicle panel receiving careful machine polishing" />
-          <div class="finish-gauge" aria-hidden="true" data-finish-gauge>
-            <span class="gauge-line"></span>
-            <span class="gauge-label">Surface reading</span>
+        <div class="hero-visual">
+          <div class="comparison-panel">
+            <figure class="comparison-layer comparison-dirty">
+              <img
+                src="/assets/detail-blue.jpg"
+                alt="Split comparison showing road film on the left and a clean vehicle finish on the right"
+              />
+              <figcaption class="comparison-label comparison-label-before">
+                <span>Before</span>
+                <strong>Road film</strong>
+              </figcaption>
+            </figure>
+            <figure class="comparison-layer comparison-clean" aria-hidden="true">
+              <img src="/assets/detail-blue.jpg" alt="" />
+              <figcaption class="comparison-label comparison-label-after">
+                <span>After</span>
+                <strong>Clean finish</strong>
+              </figcaption>
+            </figure>
+            <div class="comparison-divider" aria-hidden="true"></div>
           </div>
           <div class="hero-stamp">
             <span>Finish study</span>

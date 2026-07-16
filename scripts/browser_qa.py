@@ -47,7 +47,12 @@ def main() -> None:
                     phoneLinks: document.querySelectorAll(`a[href="${phone}"]`).length,
                     schedulerLinks:
                         document.querySelectorAll(`a[href="${scheduler}"]`).length,
-                    gauge: Boolean(document.querySelector("[data-finish-gauge]"))
+                    comparison: {
+                        panel: Boolean(document.querySelector(".comparison-panel")),
+                        dirty: Boolean(document.querySelector(".comparison-dirty")),
+                        clean: Boolean(document.querySelector(".comparison-clean")),
+                        divider: Boolean(document.querySelector(".comparison-divider"))
+                    }
                 })""",
                 [PHONE, SCHEDULER],
             )
@@ -66,8 +71,8 @@ def main() -> None:
                 "transparent",
             }:
                 failures.append(f"{width}px header has no independent background")
-            if not metrics["gauge"]:
-                failures.append(f"{width}px finish gauge is missing")
+            if not all(metrics["comparison"].values()):
+                failures.append(f"{width}px before-and-after panel is incomplete")
 
             reveal_count = page.locator(".reveal").count()
             for index in range(reveal_count):

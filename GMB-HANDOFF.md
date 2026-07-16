@@ -76,7 +76,7 @@ Build and launch a polished Houston mobile auto detailing website, connect the a
 
 ## Current state
 
-The dependency-free site is published from a clean `main` branch and connected to Vercel. The production fallback returns the intended Luster Foundry page over HTTPS. Vercel has the apex and `www` hosts attached. Spaceship confirms `ns1.vercel-dns.com` and `ns2.vercel-dns.com` are saved; the single immediate Vercel check still saw the registry nameservers, so custom-domain DNS and HTTPS are marked propagation pending without further polling. The validated 1-logo, 4-cover, and 4-business-photo GMB pack exists locally and in the verified Drive folder.
+The dependency-free site is published from a clean `main` branch and connected to Vercel. The production fallback returns the intended Luster Foundry page over HTTPS. The decorative hero slider was removed after mobile review and replaced with a fixed 50/50 dirty-versus-clean comparison that passed desktop, tablet, and phone browser QA. Vercel has the apex and `www` hosts attached. Spaceship confirms `ns1.vercel-dns.com` and `ns2.vercel-dns.com` are saved; the single immediate Vercel check still saw the registry nameservers, so custom-domain DNS and HTTPS are marked propagation pending without further polling. The validated 1-logo, 4-cover, and 4-business-photo GMB pack exists locally and in the verified Drive folder.
 
 ## Blocker
 
