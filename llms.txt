@@ -14,3 +14,14 @@
 - Service: Appointment-based mobile car detailing
 - Booking: https://cal.com/sumitdatta/auto-detail-service
 - Google review profile: https://g.page/r/CZF4LAPKVAO0EBM/review
+
+<!-- SEO-NEXT:START -->
+## Expanded pages
+- [Services](https://lusterfoundry.shop/services/)
+- [Interior Car Detailing](https://lusterfoundry.shop/services/interior-car-detailing/)
+- [Exterior Car Detailing](https://lusterfoundry.shop/services/exterior-car-detailing/)
+- [Mobile Car Wash](https://lusterfoundry.shop/services/mobile-car-wash/)
+- [Headlight Restoration & Polishing](https://lusterfoundry.shop/services/headlight-restoration/)
+- [About](https://lusterfoundry.shop/about/)
+- [Contact](https://lusterfoundry.shop/contact/)
+<!-- SEO-NEXT:END -->
