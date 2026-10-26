@@ -13,4 +13,4 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: https://lusterfoundry.shop/sitemap.xml
+Sitemap: https://thewoodlandscardetailingtx.shop/sitemap.xml

@@ -13,7 +13,7 @@ Build and launch a polished Houston mobile auto detailing website, connect the a
 - Street address: 51 Golden Scroll Cir, Spring, TX 77382
 - Phone: +1 346-643-9096
 - Appointment link: https://cal.com/sumitdatta/auto-detail-service
-- Domain: `lusterfoundry.shop`
+- Domain: `thewoodlandscardetailingtx.shop`
 - Domain status: registered successfully on 2026-07-16
 - Domain expiration: 2027-07-16
 - Registration settings: one year, high privacy with consent, auto-renew disabled
@@ -85,4 +85,4 @@ Custom-domain DNS and HTTPS propagation is pending. GBP creation still needs the
 
 ## Exact next action
 
-In a later run, verify `lusterfoundry.shop` and `www.lusterfoundry.shop` after DNS propagation, then complete the GBP administrative inputs and verification.
+In a later run, verify `thewoodlandscardetailingtx.shop` and `www.thewoodlandscardetailingtx.shop` after DNS propagation, then complete the GBP administrative inputs and verification.
